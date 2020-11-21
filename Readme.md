@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Степан Горев](https://up.htmlacademy.ru/adaptive/21/user/1544765).
-* Наставник: `Неизвестно`.
+* Наставник: Дмитрий (sench) Железцов.
 
 ---
 
