@@ -1,0 +1,40 @@
+.header-download {
+  background-color: @dark-blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-download__button {
+  padding: 21px 39px 21px 38px;
+  color: @basic-white;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  border: 3px solid @basic-white;
+  border-radius: 29px;
+  cursor: pointer;
+
+  &:hover {
+    color: @pink;
+    background-color: @basic-white;
+  }
+
+  &:active {
+    color: fade(@pink, 30%);
+    background-color: @basic-white;
+  }
+}
+
+.header-download__icons {
+  display: flex;
+  justify-content: center;
+}
+
+.header-download__intro {
+  color: @basic-white;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 24px;
+}

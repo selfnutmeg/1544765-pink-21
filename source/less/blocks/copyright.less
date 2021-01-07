@@ -1,0 +1,32 @@
+.copyright {
+  display: flex;
+  justify-content: flex-start;
+  height: 34px;
+}
+
+.copyright__text span {
+  color: @blue;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+.copyright__link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 34px;
+  margin-left: 15px;
+
+  svg {
+    fill: @pink;
+  }
+
+  &:hover svg {
+    fill: @blue;
+  }
+
+  &:active svg {
+    fill: fade(@blue, 30%);
+  }
+}

@@ -1,0 +1,40 @@
+.contacts__wrapper {
+  margin: 0 auto;
+}
+
+.contacts__title {
+  color: @blue;
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 28.8px;
+}
+
+.contacts__text {
+  color: @blue;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24.51px;
+}
+
+.contacts__phone a,
+.contacts__email a,
+.contacts__address {
+  color: @pink;
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 32.68px;
+  text-decoration: none;
+}
+
+.contacts__phone,
+.contacts__email {
+  &:hover a {
+    color: @blue;
+    text-decoration: underline;
+  }
+
+  &:active a {
+    color: fade(@blue, 30%);
+    text-decoration: none;
+  }
+}

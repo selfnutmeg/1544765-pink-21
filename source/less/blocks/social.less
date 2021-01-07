@@ -1,0 +1,39 @@
+.social {
+  width: 178px;
+  height: 54px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  .list-setting();
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  width: 54px;
+  height: 54px;
+  background-color: @basic-white;
+  border: 3px solid fade(@blue, 10%);
+  border-radius: 50%;
+
+  &--youtube {
+    padding-left: 3px;
+  }
+
+  svg {
+    fill: @pink;
+  }
+
+  &:hover {
+    border: 3px solid @blue;
+  }
+
+  &:active {
+    border: 3px solid @blue;
+    opacity: 0.1;
+  }
+}
