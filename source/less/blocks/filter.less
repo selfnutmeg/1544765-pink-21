@@ -1,0 +1,60 @@
+.filter__wrapper {
+  margin: 0 auto;
+}
+
+.filter__slogan {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.filter__form {
+  background-color: @gray;
+}
+
+.filter__list {
+  .list-setting();
+}
+
+.filter__button {
+  min-width: 183px;
+  max-width: 280px;
+  height: 55px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  // padding: 21px 90px 21px 91px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.filter__button-submit {
+  color: @pink;
+  border: 3px solid @pink;
+
+  &:hover {
+    color: @basic-white;
+    background-color: @pink;
+  }
+
+  &:active {
+    color: fade(@basic-white, 30%);
+    background-color: @pink;
+  }
+}
+
+.filter__button-cancel {
+  color: @blue;
+  border: 3px solid @blue;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: fade(@basic-white, 30%);
+    background-color: @blue;
+    opacity: 0.3;
+  }
+}
