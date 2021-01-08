@@ -22,3 +22,26 @@
   padding: 0;
   list-style: none;
 }
+
+.button {
+  height: 59px;
+  color: @basic-white;
+  background-color: @darken-green;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 2px solid @darken-green;
+  border-radius: 1px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @dark-green;
+  }
+
+  &:active {
+    background-color: @dark-green;
+    color: fade(@basic-white, 30%);
+  }
+}
