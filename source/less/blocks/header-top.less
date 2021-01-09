@@ -1,9 +1,10 @@
 .header-top {
+  min-height: 66px;
   background-color: @alpha-black;
 }
 
-.header-top__wrapper {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+@media (min-width: @tablet-width) {
+  .header-top {
+    min-height: 110px;
+  }
 }

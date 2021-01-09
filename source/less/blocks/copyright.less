@@ -2,13 +2,20 @@
   display: flex;
   justify-content: flex-start;
   height: 34px;
+
+  @media (max-width: @mobile-max-width) {
+    margin: 0;
+  }
 }
 
 .copyright__text span {
   color: @blue;
   font-size: 14px;
-  font-weight: normal;
   line-height: 18px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .copyright__link {

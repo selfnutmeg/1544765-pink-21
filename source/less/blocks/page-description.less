@@ -1,16 +1,32 @@
-.page-description__wrapper {
-  margin: 0 auto;
-}
+// .page-description__wrapper {
+//   margin: 0 auto;
+// }
 
 .page-description__intro {
+  margin-right: auto;
+  margin-left: auto;
   color: @blue;
   font-size: 14px;
   font-weight: normal;
   line-height: 30px;
+  text-align: center;
 }
 
 .page-description--home p {
+  width: 280px;
   font-size: 24px;
   font-weight: lighter;
   line-height: 28.8px;
+
+  @media (min-width: @tablet-width) {
+    width: 588px;
+    font-size: 40px;
+    line-height: 54.47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    font-size: 50px;
+    line-height: 68.09px;
+  }
 }
