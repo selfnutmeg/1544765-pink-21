@@ -1,10 +1,33 @@
 .header-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   color: @basic-white;
   font-size: 24px;
   font-weight: lighter;
   line-height: 32.68px;
+  text-align: center;
 }
 
 .header-title--home {
   line-height: 28.8px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+
+    p {
+      width: 300px;
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    p {
+      width: 300px;
+      font-size: 50px;
+      line-height: 68.09px;
+    }
+  }
 }

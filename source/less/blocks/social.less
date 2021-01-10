@@ -1,6 +1,15 @@
 .social {
   width: 178px;
   height: 54px;
+  margin: 40px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 32px 0;
+  }
 }
 
 .social__list {
@@ -10,15 +19,19 @@
 }
 
 .social__link {
+  width: 54px;
+  height: 54px;
   display: flex;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  width: 54px;
-  height: 54px;
   background-color: @basic-white;
   border: 3px solid fade(@blue, 10%);
   border-radius: 50%;
+
+  &:not(:last-of-type) {
+    margin-right: 10px;
+  }
 
   &--youtube {
     padding-left: 3px;
