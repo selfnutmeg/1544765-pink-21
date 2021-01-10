@@ -10,36 +10,38 @@
 
 <header class="page-header">
   <div class="header-top">
-    <div class="header-top__wrapper">
-      <a class="header-top__logo">
-        <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Pink">
-      </a>
-      <nav class="header-top__main-nav main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html" class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html" class="main-nav__link">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Html Academy</a>
-            </li>
-          </ul>
+    <nav class="header-top__main-nav main-nav">
+      <div class="main-nav__wrapper">
+        <div class="main-nav__actions">
+          <a class="main-nav__logo">
+            <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Pink">
+          </a>
+
+          <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
         </div>
-      </nav>
-    </div>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 
-  <div class="page-header__wrapper header-title">
-    <p>Конкурс на самое безбашенное путешествие с Пинк</p>
+  <div class="page-header__wrapper">
+    <div class="header-title wrapper">
+      <p>Конкурс на самое<br class="br-1"> безбашенное<br class="br-2"> путешествие с Пинк</p>
+    </div>
   </div>
 </header>
 
@@ -47,13 +49,13 @@
   <h1 class="visually-hidden">Страница формы для участия в конкурсе Pink</h1>
 
   <section class="page-description">
-    <div class="page-description__wrapper">
-      <p class="page-description__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+    <div class="page-description__wrapper wrapper">
+      <p class="page-description__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<br class="br-3"><span class="page-description__extra-text"> Пожалуйста, заполните форму ниже:</span></span></p>
     </div>
   </section>
 
   <section class="form">
-    <div class="form__wrapper">
+    <div class="form__wrapper wrapper">
       <h2 class="visually-hidden">Форма для участия в конкурсе Pink</h2>
 
       <form class="form__fields" action="https://echo.htmlacademy.ru" method="POST">
@@ -63,11 +65,11 @@
               <label class="form__user-data-info" for="surname">Фамилия</label>
               <input class="form__user-data-input" id="surname" type="text" placeholder="Укажите фамилию *" required>
             </li>
-            <li class="form__infoitem">
+            <li class="form__user-data-item">
               <label class="form__user-data-info" for="name">Имя</label>
               <input class="form__user-data-input" id="name" type="text" placeholder="Введите ваше имя *" required>
             </li>
-            <li class="form__info-item">
+            <li class="form__user-data-item">
               <label class="form__user-data-info" for="patronymic">Отчество</label>
               <input class="form__user-data-input" id="patronymic" type="text" placeholder="Ну и отчество тоже">
             </li>
@@ -125,11 +127,11 @@
         <fieldset class="form__contacts">
           <legend class="form__subtitle form__subtitle--contacts">Контактная информация</legend>
           <ul class="form__contacts-list">
-            <li class="form__contacts-item">
+            <li class="form__contacts-item form__contacts-item--tel">
               <label class="form__contacts-info" for="tel">Номер телефона</label>
               <input class="form__contacts-input" id="tel" type="tel" placeholder="Номер, пожалуйста">
             </li>
-            <li class="form__contacts-item">
+            <li class="form__contacts-item form__contacts-item--email">
               <label class="form__contacts-info" for="email">Адрес почты</label>
               <input class="form__contacts-input" id="email" type="email" placeholder="Введите почту *" required>
             </li>
@@ -178,8 +180,8 @@
 </main>
 
 <footer class="page-footer">
-  <div class="page-footer__wrapper">
-    <a class="page-footer__logo">
+  <div class="page-footer__wrapper wrapper">
+    <a href="#" class="page-footer__logo">
       <img src="https://via.placeholder.com/125ч40" width="145" height="40" alt="Логотип «Pink»">
     </a>
 
