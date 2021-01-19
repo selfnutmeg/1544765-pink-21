@@ -90,7 +90,7 @@
 }
 
 .contacts__map {
-  width: 320px;
+  width: 100%;
   height: 200px;
   margin: 0 auto;
   position: relative;
@@ -106,9 +106,10 @@
     position: absolute;
     display: block;
     top: 0;
-    left: 0;
+    left: 50%;
     width: 0;
     height: 0;
+    transform: translateX(-50%);
     z-index: 100;
     border-style: solid;
     border-width: 33px 160px;
@@ -123,39 +124,51 @@
     }
   }
 
-  ::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 95px;
-    left: 142px;
-    width: 36px;
-    height: 36px;
-    z-index: 100;
-    background-image: url("../img/map-marker.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+  // ::after {
+  //   content: "";
+  //   position: absolute;
+  //   display: block;
+  //   top: 95px;
+  //   left: 142px;
+  //   width: 36px;
+  //   height: 36px;
+  //   z-index: 100;
+  //   background-image: url("../img/map-marker.svg");
+  //   background-position: center;
+  //   background-repeat: no-repeat;
 
-    @media (min-width: @tablet-width) {
-      top: 194px;
-      left: 312px;
-    }
+  //   @media (min-width: @tablet-width) {
+  //     top: 194px;
+  //     left: 312px;
+  //   }
 
-    @media (min-width: @desktop-width) {
-      top: 264px;
-      left: 582px;
-    }
-  }
+  //   @media (min-width: @desktop-width) {
+  //     top: 264px;
+  //     left: 582px;
+  //   }
+  // }
 
   @media (min-width: @tablet-width) {
-    width: 660px;
+    // width: 660px;
     height: 374px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    // width: 1200px;
     height: 502px;
   }
+}
+
+.contacts__map .contacts__interactive-map,
+.contacts__map-js .contacts__map-image {
+  display: none;
+}
+
+.contacts__map-js .contacts__interactive-map {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -179,7 +192,6 @@
     margin: 0 auto;
     padding-top: 5px;
     justify-content: space-around;
-    // column-gap: 10px;
   }
 
   .contacts__title {
@@ -189,10 +201,6 @@
   }
 
   .contacts__item {
-    // &:not(:last-of-type) {
-    //   margin-right: 10px;
-    // }
-
     &:nth-child(2) {
       order: 1;
       transform: translateX(16px);
@@ -206,8 +214,4 @@
       margin-bottom: 22px;
     }
   }
-
-  // .contacts__item:nth-child(2) {
-  //   order: 1;
-  // }
 }
