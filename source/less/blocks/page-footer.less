@@ -28,6 +28,22 @@
   width: 145px;
   height: 40px;
 
+  svg {
+    fill: @blue;
+    color: @blue;
+  }
+
+  &:hover svg {
+    fill: @pink;
+    color: @pink;
+  }
+
+  &:active svg {
+    fill: unset;
+    color: unset;
+    opacity: 0.3;
+  }
+
   .page-footer__svg--desktop {
     display: none;
   }
