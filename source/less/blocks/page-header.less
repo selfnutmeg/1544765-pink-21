@@ -17,10 +17,18 @@
     background-repeat: no-repeat;
     background-size: 100%;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-mobile@2x.png");
+    }
+
     @media (min-width: @tablet-width) {
       height: 729px;
       bottom: 0;
       background-image: url("../img/back-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/back-tablet@2x.png");
+      }
     }
 
     @media (min-width: @desktop-width) {
@@ -32,6 +40,10 @@
     background-image: url("../img/back-desktop.png");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.png");
+    }
   }
 }
 
@@ -69,8 +81,6 @@
   @media (min-width: @tablet-width) {
     margin-right: auto;
     margin-left: auto;
-    // padding-left: 20px;
-    // padding-right: 20px;
 
     .header-image {
       position: absolute;
@@ -81,6 +91,7 @@
 
   @media (min-width: @desktop-width) {
     max-width: 1200px;
+    right: 2px;
   }
 }
 
