@@ -44,6 +44,10 @@
 
 .features__item {
   position: relative;
+
+  @media (max-width: @mobile-max-width) {
+    transform: translateY(-3px);
+  }
 }
 
 .features__title {
@@ -61,6 +65,10 @@
   margin-top: 0;
   margin-bottom: 33px;
   font-size: 14px;
+
+  @media (max-width: @mobile-max-width) {
+    letter-spacing: 0.3px;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 36px;
