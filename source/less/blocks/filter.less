@@ -171,6 +171,8 @@
   font-weight: bold;
   text-align: center;
   background-color: transparent;
+  border-width: 3px;
+  border-style: solid;
   border-radius: 30px;
   outline: none;
   cursor: pointer;
@@ -198,12 +200,12 @@
     &:hover,
     &:focus {
       color: fade(@blue, 30%);
-      border: 3px solid @blue;
+      border-color: fade(@blue, 30%);
     }
 
     &:active {
       color: fade(@basic-white, 30%);
-      border-color: @gray;
+      border-color: transparent;
       background-color: fade(@blue, 30%);
     }
   }
